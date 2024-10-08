@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css" />
     <title>Document</title>
 </head>
 <body>
-    
+    <form class="form">
+        <fieldset class="borda">
+            <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" />
+            </div>
+      
+          <label for="data-nascimento">Data de Nascimento</label>
+          <input type="text" id="data-nascimento" name="data-nascimento" placeholder="dd / mm / aaaa" />
+          
+          <div>
+            <label for="sexo">Sexo:</label>
+            <input id="Masc" name="Masc" type="radio" />Masc
+            <input id="Fem" name="Fem" type="radio" />Fem
+            <input id="PNI" name="PNI" type="radio" /> Prefiro não informar
+          </div>
+          
+          <div>
+            Endereço
+          </div>
+
+          <div>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" />
+          </div>
+
+          <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" />
+          </div>
+
+          <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" />
+          </div>
+          
+          <div>
+            <label for="uf">UF:</label>
+            <select id="select" name="select">
+                <option>Brasilia</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+            </select>
+          </div>
+      
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+
+          <div>
+            <input type="reset" value="Limpar">
+            <input type="submit">
+          </div>
+        </fieldset>
+      </form>
 </body>
 </html>
